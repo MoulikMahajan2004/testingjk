@@ -6,6 +6,7 @@ pipeline{
             {
                 echo'building jenkins'
             }
+
              stage('Test')
             {
                 echo'Testing jenkins'
