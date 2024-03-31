@@ -2,22 +2,19 @@ pipeline{
     agent any
         stages
         {
-            stage('build')
-            {
-                steps
-                {
-                    echo'building jenkins'
-            
-                }
+           stage('Build') {
+            steps {
+                echo 'building my code using the npm for react'
+                echo'npm install'
+                echo'npm run build'
             }
-            stage('Testing')
-            {
-                steps
-                {
-                    echo'Test jenkins'
-            
-                }
+        }
+        
+        stage('Unit and Integration Tests') {
+            steps {
+                echo 'Running unit test and integration'
             }
+        }
         }
         post
         {
