@@ -24,7 +24,7 @@ pipeline{
                           attachLog: true
             }
 
-            failes
+            failure
             {
                 emailtext subject:"build droped"
                           boy:"hi test failes"
