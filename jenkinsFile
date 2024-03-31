@@ -1,0 +1,36 @@
+pipeline{
+    agent any
+        stages
+        {
+            stage('build')
+            {
+                echo'building jenkins'
+            }
+
+
+
+
+
+
+
+        }
+        post
+        {
+            success
+            {
+                emailtext subject:"buildingpipeling"
+                          boy:"hi"
+                           to: 'moulik4815.be22@chitkara.edu.in',
+                          attachLog: true
+            }
+
+            failes
+            {
+                emailtext subject:"build droped"
+                          boy:"hi test failes"
+                           to: 'moulik4815.be22@chitkara.edu.in',
+                          attachLog: true
+            }
+        }
+
+}
