@@ -4,17 +4,13 @@ pipeline{
         {
             stage('build')
             {
-                echo'building jenkins'
+                steps
+                {
+                    echo'building jenkins'
+            
+                }
             }
-
-             stage('Test')
-            {
-                echo'Testing jenkins'
-            }
-               stage('Test')
-            {
-                echo'Testing jenkinzzs'
-            }
+           
         }
         post
         {
