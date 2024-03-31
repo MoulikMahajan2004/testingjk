@@ -10,7 +10,14 @@ pipeline{
             
                 }
             }
-           
+            stage('Testing')
+            {
+                steps
+                {
+                    echo'Test jenkins'
+            
+                }
+            }
         }
         post
         {
