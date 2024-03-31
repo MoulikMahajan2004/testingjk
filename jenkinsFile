@@ -10,12 +10,10 @@ pipeline{
             {
                 echo'Testing jenkins'
             }
-
-
-
-
-
-
+               stage('Test')
+            {
+                echo'Testing jenkins'
+            }
         }
         post
         {
