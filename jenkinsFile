@@ -13,7 +13,7 @@ pipeline{
             }
                stage('Test')
             {
-                echo'Testing jenkins'
+                echo'Testing jenkinzzs'
             }
         }
         post
