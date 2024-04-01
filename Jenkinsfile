@@ -21,7 +21,7 @@ pipeline{
             success
             {
                 emailtext subject:"buildingpipeling",
-                          boy:"hi",
+                          body:"hi",
                            to: 'moulik4815.be22@chitkara.edu.in',
                           attachLog: true
             }
@@ -29,7 +29,7 @@ pipeline{
             failure
             {
                 emailtext subject:"build droped",
-                          boy:"hi test failes",
+                          body:"hi test failes",
                            to: 'moulik4815.be22@chitkara.edu.in',
                           attachLog: true
             }
